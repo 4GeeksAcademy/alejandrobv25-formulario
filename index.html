@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  </head>
+  <body>
+    <div class="card text-center row g-3 w-50 mx-auto" style="display: flex;">
+      <div class="card-header" style="display: flex; justify-content: flex-start;">
+        Payment form example
+      </div>
+      <div class="card-body">
+        <div class="alert alert-danger" role="alert" style="display: flex; justify-content: flex-start;">
+          Some fields are missing
+        </div>
+        <form class="row g-3">
+          <div class="col-md-5">
+            <label for="inputCard" class="form-label" style="display: flex; justify-content: flex-start;">Card#</label>
+            <input type="text" placeholder="XXXXXXXXXXXXXXXX" class="form-control" id="inputCard">
+          </div>
+          <div class="col-md-3">
+            <label for="inputCVC" class="form-label" style="display: flex; justify-content: flex-start;">CVC#</label>
+            <input type="text" placeholder="0000" class="form-control" id="inputCVC">
+          </div>
+          <div class="col-md-4">
+            <label for="inputAmount" class="form-label" style="display: flex; justify-content: flex-start;">Amount</label>
+            <input type="text" placeholder="$ Amount" class="form-control" id="inputAmount">
+          </div>
+          <div class="col-md-6">
+            <label for="inputFirst-Name" class="form-label" style="display: flex; justify-content: flex-start;">First Name</label>
+            <input type="text" class="form-control" id="inputFirst-Name">
+          </div>
+          <div class="col-md-6">
+            <label for="inputLast-Name" class="form-label" style="display: flex; justify-content: flex-start;">Last Name</label>
+            <input type="text" class="form-control" id="inputLast-Name">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label" style="display: flex; justify-content: flex-start;">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-3">
+            <label for="inputState" class="form-label" style="display: flex; justify-content: flex-start;">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Pick a state</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-3">
+            <label for="inputPostal-Code" class="form-label" style="display: flex; justify-content: flex-start;">Postal Code</label>
+            <input type="text" class="form-control" id="inputPostal-Code">
+          </div>
+          <div class="col-md-6">
+            <div class="form-label">
+              <label for="input" class="form-label" style="display: flex; justify-content: flex-start;">We accept:</label>
+              <div class="container fluid d-flex ;" style=" width: 225px;;  background-color: darkgray; border-radius: 5px; margin-right: 135px;">
+                <div class="form-check form-check-inline p-0 ms-0">
+                  <input class="form-check-input ms-0" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" style="transform: scale(0.6);">
+                  <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-mastercard text-white"></i></label>
+                </div>
+                <div class="form-check form-check-inline p-0 ms-0">
+                  <input class="form-check-input ms-0" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" style="transform: scale(0.6);">
+                  <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-visa text-white"></i></label>
+                </div>
+                <div class="form-check form-check-inline p-0 ms-0">
+                  <input class="form-check-input ms-0" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option3" style="transform: scale(0.6);">
+                  <label class="form-check-label" for="inlineRadio1"><i class="fa-brands fa-cc-diners-club text-white"></i></label>
+                </div>
+                <div class="form-check form-check-inline p-0 ms-0">
+                  <input class="form-check-input ms-0" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option4" style="transform: scale(0.6);">
+                  <label class="form-check-label" for="inlineRadio2"><i class="fa-brands fa-cc-discover text-white"></i></label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="exampleFormControlTextarea1" class="form-label" style="display: flex; justify-content: flex-start;">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            <label for="floatingTextarea2" style="display: flex; justify-content: flex-start; font-size: x-small;">Add any notes here.</label>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer text-body-secondary">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button type="button" class="btn btn-secondary">Cancel</button>
+          <button class="btn btn-primary" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  </body>
+</html>
